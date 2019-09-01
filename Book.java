@@ -1,4 +1,4 @@
-  
+  /*PRANAV_JAGADEESH_1BM18CS071_Java*/
 
 /*Create a class Book which contains four members: name, author, price, num_pages. 
  * Include a constructor to set the values for the members. 
@@ -15,7 +15,7 @@ import java.util.*;
   double price;
   int num_pages;
   
-   Book(String name,String author,double price,int num_pages)
+   Book(String name,String author,double price,int num_pages)  /*constructor to set the values for the members*/
     {  
     this.name=name;
     this.author=author;
@@ -28,6 +28,8 @@ import java.util.*;
      
     }
 
+           /*methods to set and get the details of the objects*/
+	 
     public String getName()
     {
      return name;
@@ -68,6 +70,8 @@ import java.util.*;
      this.num_pages=num_pages;
     }
     
+	 /* toString( ) method that could display the complete details of the Book*/
+	 
     public String toString()
     {
     	return "Name of Book:"+name+"\n"+"Author Name :"+author+"\n"+"Book price:"+price+"\n" +"Number of pages:"+num_pages;
@@ -83,7 +87,7 @@ import java.util.*;
      System.out.println(b1);
      
      System.out.println("---------------------------------------------");
-     System.out.println("\nEnter the number of objects:");
+     System.out.println("\nEnter the number of objects:");   /*to create n Book objects*/
      int n = sc.nextInt();
      Book b[]=new Book[n];
      
