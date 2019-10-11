@@ -1,5 +1,13 @@
+/*Develop a Java program to create a class Bank that maintains two kinds of account for its customers, one called savings account and
+the other current account.
 
+The savings account provides compound interest and withdrawal facilities but no cheque book facility.
+The current account provides cheque book facility but no interest.
 
+Current account holders should also maintain a minimum balance and if the balance falls below this level, a service charge is
+imposed.
+*/
+	
 import java.io.*;
 import java.util.Scanner;
 class Account
