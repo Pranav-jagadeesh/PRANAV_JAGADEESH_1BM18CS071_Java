@@ -1,8 +1,3 @@
-
-/*Develop a Java program to create a class Student with members usn, 
- * name, an array credits and an array marks. Include methods to accept 
- * and display details and a method to calculate SGPA of a student.
- */
 import java.util.*;
 class student
 {
@@ -89,14 +84,20 @@ public void read_data()
 }
 class Head
 {
-public static void main(String args[])
-{
-student t=new student();
-t.read_data();
-t.cal_sgpa();
-t.display();
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int n;
+  int i;
+  System.out.println("enter no of students:"); 
+  n=sc.nextInt();
+  student t[]=new student[n];
+  for(i=0;i<n;i++)
+  {
+   t[i]=new student();
+   t[i].read_data();
+   t[i].cal_sgpa();
+   t[i].display();
+  }
+ }
 }
-}
-
-
-
