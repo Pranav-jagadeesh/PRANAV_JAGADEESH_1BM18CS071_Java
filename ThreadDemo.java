@@ -1,3 +1,8 @@
+/* PRANAV_JAGADEESH_1BM18CS071
+program to print two strings */
+
+
+
 package basic_programs;
 
 class A extends Thread
